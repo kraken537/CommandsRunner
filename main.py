@@ -8,7 +8,7 @@ import os
 import json
 
 def check_admin():
-    """Sprawdza, czy program działa jako administrator."""
+    """Checks if the program is running as an administrator."""
     try:
         is_admin = ctypes.windll.shell32.IsUserAnAdmin()
     except:
@@ -16,15 +16,15 @@ def check_admin():
     return is_admin
 
 def restart_as_admin():
-    """Ponownie uruchamia aplikację jako administrator."""
+    """Restarts the application as an administrator."""
     if not check_admin():
-        # Przygotowanie argumentów do uruchomienia jako administrator
+        # Prepare arguments to run as administrator
         script = sys.executable
         params = " ".join([f'"{arg}"' for arg in sys.argv])
         ctypes.windll.shell32.ShellExecuteW(None, "runas", script, params, None, 0)
-        sys.exit()  # Zamknięcie aktualnej instancji
+        sys.exit()  # Close the current instance
 
-# Wymuszenie uruchomienia jako administrator
+# Force running as administrator
 restart_as_admin()
 
 def cleanup_temp():
@@ -33,28 +33,28 @@ def cleanup_temp():
         try:
             shutil.rmtree(temp_dir)
         except Exception as e:
-            print(f"Nie udało się usunąć katalogu tymczasowego: {e}")
+            print(f"Failed to remove temporary directory: {e}")
 
 import atexit
 atexit.register(cleanup_temp)
 
-# Funkcja uruchamiania komend
+# Function to run commands
 def run_command(command):
     try:
         subprocess.run(command, shell=True)
     except Exception as e:
-        messagebox.showerror("Błąd", f"Nie udało się uruchomić komendy: {e}")
+        messagebox.showerror("Error", f"Failed to run command: {e}")
 
 def change_language(lang):
     if lang == "EN":
         messagebox.showinfo("Language Change", "Language changed to English.")
         restart_with_language("EN")
     elif lang == "PL":
-        messagebox.showinfo("Language Change", "Język zmieniony na polski.")
+        messagebox.showinfo("Language Change", "Language changed to Polish.")
         restart_with_language("PL")
 
 def restart_with_language(lang):
-    """Ponownie uruchamia aplikację z wybranym językiem."""
+    """Restarts the application with the selected language."""
     script = sys.executable
     params = " ".join([f'"{arg}"' for arg in sys.argv])
     params += f' --lang={lang}'
@@ -62,35 +62,35 @@ def restart_with_language(lang):
     sys.exit()
 
 def get_resource_path(filename):
-    """Zwraca pełną ścieżkę do zasobu w katalogu projektu."""
-    if getattr(sys, 'frozen', False):  # Sprawdzenie, czy aplikacja jest skompilowana
-        base_path = sys._MEIPASS  # Folder tymczasowy stworzony przez PyInstaller
+    """Returns the full path to a resource in the project directory."""
+    if getattr(sys, 'frozen', False):  # Check if the application is compiled
+        base_path = sys._MEIPASS  # Temporary folder created by PyInstaller
     else:
-        base_path = os.path.dirname(os.path.abspath(__file__))  # Ścieżka do skryptu
+        base_path = os.path.dirname(os.path.abspath(__file__))  # Path to the script
     return os.path.join(base_path, filename)
 
 def load_commands(lang):
-    # Wybór pliku JSON
+    # Select JSON file
     if lang == "EN":
         filepath = get_resource_path("commandsEN.json")
     else:
         filepath = get_resource_path("commandsPL.json")
     
-    # Wczytanie danych z pliku
+    # Load data from file
     with open(filepath, "r", encoding="utf-8") as file:
         return json.load(file)
 
 def main():
-    # Sprawdzenie argumentów wiersza poleceń dla języka
-    lang = "PL"  # Domyślny język
+    # Check command line arguments for language
+    lang = "PL"  # Default language
     for arg in sys.argv:
         if arg.startswith("--lang="):
             lang = arg.split("=")[1]
 
-    # Załaduj komendy z pliku
+    # Load commands from file
     data = load_commands(lang)
 
-    # Tworzenie okna aplikacji
+    # Create application window
     root = tk.Tk()
     root.title("Command Runner")
     root.geometry("900x500")
@@ -107,7 +107,7 @@ def main():
                     font=("Arial", 10))
     style.map("Treeview", background=[("selected", "#1ABC9C")])
 
-    # Funkcja do odświeżania tabeli
+    # Function to refresh the table
     def refresh_table(filter_text=""):
         for row in tree.get_children():
             tree.delete(row)
@@ -117,7 +117,7 @@ def main():
         for row in filtered_data:
             tree.insert("", "end", values=(row["ID"], row["Command"], row["Description"]))
 
-    # Tworzenie pola wyszukiwania
+    # Create search field
     search_frame = tk.Frame(root, bg="#2C3E50")
     search_frame.pack(fill="x", padx=10, pady=10)
 
@@ -127,13 +127,13 @@ def main():
     search_entry = tk.Entry(search_frame, font=("Arial", 12))
     search_entry.pack(side="left", fill="x", expand=True, padx=5)
 
-    # Bind dynamicznego wyszukiwania
+    # Bind dynamic search
     def on_search(event):
         refresh_table(search_entry.get())
 
     search_entry.bind("<KeyRelease>", on_search)
 
-    # Tworzenie tabeli z paskiem przewijania
+    # Create table with scrollbar
     tree_frame = tk.Frame(root)
     tree_frame.pack(fill="both", expand=True, padx=10, pady=10)
 
@@ -151,7 +151,7 @@ def main():
 
     tree_scroll.config(command=tree.yview)
 
-    # Funkcja do obsługi podwójnego kliknięcia
+    # Function to handle double-click
     def on_double_click(event):
         selected_item = tree.focus()
         if not selected_item:
@@ -163,7 +163,7 @@ def main():
 
     tree.bind("<Double-1>", on_double_click)
 
-    # Funkcja do obsługi przycisku RUN
+    # Function to handle RUN button
     def on_run():
         selected_item = tree.focus()
         if not selected_item:
@@ -173,7 +173,7 @@ def main():
         command = tree.item(selected_item, "values")[1]
         run_command(command)
 
-    # Przyciski
+    # Buttons
     button_frame = tk.Frame(root, bg="#2C3E50")
     button_frame.pack(pady=10)
 
@@ -183,7 +183,7 @@ def main():
     quit_button = tk.Button(button_frame, text="EXIT" if lang == "EN" else "WYJŚCIE", command=root.destroy, bg="#E74C3C", fg="white", font=("Arial", 12), padx=20)
     quit_button.pack(side="left", padx=5)
 
-    # Przycisk zmiany języka
+    # Language change button
     lang_button_frame = tk.Frame(root, bg="#2C3E50")
     lang_button_frame.pack(pady=10)
 
@@ -195,19 +195,19 @@ def main():
 
     lang_button_frame.pack(side="right", padx=10)
 
-    # Dodanie napisu w lewym dolnym rogu
+    # Add label in the bottom left corner
     footer_label = tk.Label(root, text="Kuzyn Entertaiment Production", bg="#2C3E50", fg="#E74C3C", font=("Arial", 10, "bold"))
     footer_label.pack(side="left", anchor="sw", padx=10, pady=10)
 
-    # Odświeżenie tabeli na start
+    # Refresh table on start
     refresh_table()
 
-    # Uruchomienie pętli głównej aplikacji
+    # Start the main application loop
     root.mainloop()
 
 if __name__ == "__main__":
-    # Sprawdzenie argumentów wiersza poleceń dla języka
-    lang = "PL"  # Domyślny język
+    # Check command line arguments for language
+    lang = "PL"  # Default language
     for arg in sys.argv:
         if arg.startswith("--lang="):
             lang = arg.split("=")[1]
