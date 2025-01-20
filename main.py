@@ -61,22 +61,25 @@ def restart_with_language(lang):
     ctypes.windll.shell32.ShellExecuteW(None, "runas", script, params, None, 0)
     sys.exit()
 
-def load_commands(lang):
-    # Określenie ścieżki do zasobów
+def get_resource_path(filename):
+    """Zwraca pełną ścieżkę do zasobu w katalogu projektu."""
     if getattr(sys, 'frozen', False):  # Sprawdzenie, czy aplikacja jest skompilowana
         base_path = sys._MEIPASS  # Folder tymczasowy stworzony przez PyInstaller
     else:
         base_path = os.path.dirname(os.path.abspath(__file__))  # Ścieżka do skryptu
+    return os.path.join(base_path, filename)
 
+def load_commands(lang):
     # Wybór pliku JSON
     if lang == "EN":
-        filepath = os.path.join(base_path, "commandsEN.json")
+        filepath = get_resource_path("commandsEN.json")
     else:
-        filepath = os.path.join(base_path, "commandsPL.json")
+        filepath = get_resource_path("commandsPL.json")
     
     # Wczytanie danych z pliku
     with open(filepath, "r", encoding="utf-8") as file:
         return json.load(file)
+
 def main():
     # Sprawdzenie argumentów wiersza poleceń dla języka
     lang = "PL"  # Domyślny język
@@ -92,7 +95,7 @@ def main():
     root.title("Command Runner")
     root.geometry("900x500")
     root.configure(bg="#2C3E50")
-    root.iconbitmap("E:/program do wykonywania, systemowych polecen/icon.ico")
+    root.iconbitmap(get_resource_path("icon.ico"))
 
     style = ttk.Style()
     style.theme_use("clam")
