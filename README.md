@@ -22,13 +22,8 @@ Command Runner is a Python-based application that allows users to execute variou
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/commandrunner.git
+   git clone https://github.com/kraken537/commandrunner.git
    cd command-runner
-
-
-
-
-
 
 # Command Runner  PL
 
