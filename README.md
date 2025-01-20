@@ -1,57 +1,58 @@
-Command Runner
+# Command Runner   EN
 
-Command Runner to aplikacja napisana w Pythonie, która umożliwia uruchamianie różnych poleceń systemowych za pomocą interfejsu graficznego. Aplikacja obsługuje dwa języki: polski (PL) i angielski (EN).
+Command Runner is a Python-based application that allows users to execute various system commands through a graphical user interface. The application supports two languages: Polish (PL) and English (EN).
 
-Funkcje
+![Logo](path/to/your/logo.png) <!-- If you have a logo for the project -->
 
-Uruchamianie poleceń systemowych z listy.
+## Features
 
-Wyszukiwanie poleceń w czasie rzeczywistym.
+- ✅ Execute system commands from a predefined list.
+- 🔍 Real-time command search functionality.
+- 🌐 Switch the interface language between Polish and English.
+- 🔒 Automatically runs with administrator privileges.
+- 🧹 Cleans up temporary files after the application closes.
 
-Zmiana języka interfejsu między polskim a angielskim.
+## Requirements
 
-Automatyczne uruchamianie aplikacji z uprawnieniami administratora.
+- 🐍 Python 3.x
 
-Usuwanie tymczasowych plików po zamknięciu aplikacji.
+## Installation
 
-Wymagania
+1. Clone the repository:
 
-Python 3.x
+   ```sh
+   git clone https://github.com/yourusername/command-runner.git
+   cd command-runner
 
-Instalacja
 
-Sklonuj repozytorium:
 
-git clone https://github.com/yourusername/command-runner.git
-cd command-runner
 
-Uruchomienie
+# Command Runner  PL
 
-Uruchom aplikację:
+Command Runner to aplikacja napisana w Pythonie, która umożliwia uruchamianie różnych poleceń systemowych za pomocą interfe jsu graficznego. Aplikacja obsługuje dwa języki: polski (PL) i angielski (EN).
 
-python main.py
+![Logo](path/to/your/logo.png) <!-- Jeśli posiadasz logo projektu -->
 
-Aplikacja automatycznie uruchomi się z uprawnieniami administratora.
+## Funkcje
 
-Zmiana języka
+- ✅ Uruchamianie poleceń systemowych z listy.
+- 
+- 🔍 Wyszukiwanie poleceń w czasie rzeczywistym.
+-
+- 🌐 Zmiana języka interfejsu między polskim a angielskim.
+-
+- 🔒 Automatyczne uruchamianie aplikacji z uprawnieniami administratora.
+- 
+- 🧹 Usuwanie tymczasowych plików po zamknięciu aplikacji.
 
-Aby zmienić język interfejsu, kliknij przycisk "EN" lub "PL" w prawym górnym rogu aplikacji. Aplikacja uruchomi się ponownie z wybranym językiem.
+## Wymagania
 
-Struktura projektu
+- 🐍 Python 3.x
 
-main.py - główny plik aplikacji.
+## Instalacja
 
-commandsPL.json - plik JSON zawierający listę poleceń w języku polskim.
+1. Sklonuj repozytorium:
 
-commandsEN.json - plik JSON zawierający listę poleceń w języku angielskim.
-
-icon.ico - ikona aplikacji.
-
-Autor
-
-Kuzyn Entertaiment Production
-
-Licencja
-
-Ten projekt jest licencjonowany na warunkach licencji MIT. Szczegóły znajdują się w pliku LICENSE.
-
+   ```sh
+   git clone github.com/kraken537/CommandsRunner
+   cd command-runner
