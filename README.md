@@ -1,8 +1,9 @@
+![Logo](https://drive.google.com/uc?id=1SWRC6O5HhhhjE_Al-DF-cGH6qPc8MAz7)
+
+
 # Command Runner   EN
 
 Command Runner is a Python-based application that allows users to execute various system commands through a graphical user interface. The application supports two languages: Polish (PL) and English (EN).
-
-![Logo](path/to/your/logo.png) <!-- If you have a logo for the project -->
 
 ## Features
 
