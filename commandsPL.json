@@ -1,0 +1,342 @@
+[
+    {
+        "Command": "appwiz.cpl",
+        "Description": "Otwiera 'Programy i funkcje'",
+        "ID": 1
+    },
+    {
+        "Command": "msconfig",
+        "Description": "Otwiera narzędzie 'Konfiguracja systemu'",
+        "ID": 2
+    },
+    {
+        "Command": "cmd",
+        "Description": "Uruchamia Wiersz polecenia",
+        "ID": 3
+    },
+    {
+        "Command": "notepad",
+        "Description": "Uruchamia Notatnik",
+        "ID": 4
+    },
+    {
+        "Command": "calc",
+        "Description": "Uruchamia Kalkulator",
+        "ID": 5
+    },
+    {
+        "Command": "explorer",
+        "Description": "Otwiera Eksplorator Windows",
+        "ID": 6
+    },
+    {
+        "Command": "dxdiag",
+        "Description": "Uruchamia Narzędzie diagnostyczne DirectX",
+        "ID": 7
+    },
+    {
+        "Command": "taskmgr",
+        "Description": "Uruchamia Menedżera zadań",
+        "ID": 8
+    },
+    {
+        "Command": "regedit",
+        "Description": "Uruchamia Edytor rejestru",
+        "ID": 9
+    },
+    {
+        "Command": "mmsys.cpl",
+        "Description": "Otwiera ustawienia dźwięku",
+        "ID": 10
+    },
+    {
+        "Command": "control",
+        "Description": "Otwiera Panel sterowania",
+        "ID": 11
+    },
+    {
+        "Command": "control admintools",
+        "Description": "Otwiera 'Narzędzia administracyjne'",
+        "ID": 12
+    },
+    {
+        "Command": "control folders",
+        "Description": "Otwiera 'Opcje folderów'",
+        "ID": 13
+    },
+    {
+        "Command": "control keyboard",
+        "Description": "Otwiera właściwości klawiatury",
+        "ID": 14
+    },
+    {
+        "Command": "control mouse",
+        "Description": "Otwiera właściwości myszy",
+        "ID": 15
+    },
+    {
+        "Command": "control printers",
+        "Description": "Otwiera 'Urządzenia i drukarki'",
+        "ID": 16
+    },
+    {
+        "Command": "control schedtasks",
+        "Description": "Otwiera Harmonogram zadań",
+        "ID": 17
+    },
+    {
+        "Command": "control userpasswords",
+        "Description": "Otwiera ustawienia kont użytkowników",
+        "ID": 18
+    },
+    {
+        "Command": "control userpasswords2",
+        "Description": "Otwiera zaawansowane ustawienia kont użytkowników",
+        "ID": 19
+    },
+    {
+        "Command": "compmgmt.msc",
+        "Description": "Otwiera 'Zarządzanie komputerem'",
+        "ID": 20
+    },
+    {
+        "Command": "devmgmt.msc",
+        "Description": "Uruchamia Menedżera urządzeń",
+        "ID": 21
+    },
+    {
+        "Command": "diskmgmt.msc",
+        "Description": "Otwiera 'Zarządzanie dyskami'",
+        "ID": 22
+    },
+    {
+        "Command": "eventvwr.msc",
+        "Description": "Otwiera Podgląd zdarzeń systemu Windows",
+        "ID": 23
+    },
+    {
+        "Command": "fsmgmt.msc",
+        "Description": "Otwiera 'Foldery udostępnione'",
+        "ID": 24
+    },
+    {
+        "Command": "gpedit.msc",
+        "Description": "Uruchamia Edytor lokalnych zasad grupy",
+        "ID": 25
+    },
+    {
+        "Command": "inetcpl.cpl",
+        "Description": "Otwiera 'Właściwości internetowe'",
+        "ID": 26
+    },
+    {
+        "Command": "lusrmgr.msc",
+        "Description": "Otwiera 'Menedżer użytkowników lokalnych i grup'",
+        "ID": 27
+    },
+    {
+        "Command": "main.cpl",
+        "Description": "Otwiera właściwości myszy",
+        "ID": 28
+    },
+    {
+        "Command": "perfmon.msc",
+        "Description": "Otwiera Monitor wydajności",
+        "ID": 29
+    },
+    {
+        "Command": "powercfg.cpl",
+        "Description": "Otwiera 'Opcje zasilania'",
+        "ID": 30
+    },
+    {
+        "Command": "rsop.msc",
+        "Description": "Otwiera 'Skuteczna polityka zabezpieczeń'",
+        "ID": 31
+    },
+    {
+        "Command": "secpol.msc",
+        "Description": "Otwiera 'Zasady zabezpieczeń lokalnych'",
+        "ID": 32
+    },
+    {
+        "Command": "services.msc",
+        "Description": "Uruchamia 'Usługi'",
+        "ID": 33
+    },
+    {
+        "Command": "sysdm.cpl",
+        "Description": "Otwiera 'Właściwości systemu'",
+        "ID": 34
+    },
+    {
+        "Command": "telephon.cpl",
+        "Description": "Otwiera 'Opcje telefonu i modemu'",
+        "ID": 35
+    },
+    {
+        "Command": "timedate.cpl",
+        "Description": "Otwiera 'Data i godzina'",
+        "ID": 36
+    },
+    {
+        "Command": "verifier",
+        "Description": "Uruchamia Menedżera weryfikacji sterowników",
+        "ID": 37
+    },
+    {
+        "Command": "wf.msc",
+        "Description": "Otwiera 'Zapora systemu Windows z zaawansowanym zabezpieczeniem'",
+        "ID": 38
+    },
+    {
+        "Command": "wmimgmt.msc",
+        "Description": "Otwiera 'Zarządzanie WMI'",
+        "ID": 39
+    },
+    {
+        "Command": "wscui.cpl",
+        "Description": "Otwiera 'Centrum zabezpieczeń systemu Windows'",
+        "ID": 40
+    },
+    {
+        "Command": "write",
+        "Description": "Uruchamia WordPad",
+        "ID": 41
+    },
+    {
+        "Command": "wuapp",
+        "Description": "Otwiera 'Windows Update'",
+        "ID": 42
+    },
+    {
+        "Command": "optionalfeatures",
+        "Description": "Otwiera okno 'Funkcje systemu Windows'",
+        "ID": 43
+    },
+    {
+        "Command": "osk",
+        "Description": "Uruchamia klawiaturę ekranową",
+        "ID": 44
+    },
+    {
+        "Command": "snippingtool",
+        "Description": "Uruchamia Narzędzie wycinania",
+        "ID": 45
+    },
+    {
+        "Command": "sndvol",
+        "Description": "Uruchamia mikser głośności",
+        "ID": 46
+    },
+    {
+        "Command": "iexpress",
+        "Description": "Uruchamia Kreatora pakietów IExpress",
+        "ID": 47
+    },
+    {
+        "Command": "certmgr.msc",
+        "Description": "Otwiera Menedżera certyfikatów dla bieżącego użytkownika",
+        "ID": 48
+    },
+    {
+        "Command": "control color",
+        "Description": "Otwiera ustawienia 'Kolor i wygląd okien'",
+        "ID": 49
+    },
+    {
+        "Command": "control desktop",
+        "Description": "Otwiera ustawienia tła pulpitu",
+        "ID": 50
+    },
+    {
+        "Command": "control fonts",
+        "Description": "Otwiera folder zainstalowanych czcionek",
+        "ID": 51
+    },
+    {
+        "Command": "colorcpl",
+        "Description": "Otwiera ustawienia zarządzania kolorami",
+        "ID": 52
+    },
+    {
+        "Command": "control joy.cpl",
+        "Description": "Otwiera ustawienia kontrolerów gier",
+        "ID": 53
+    },
+    {
+        "Command": "rekeywiz",
+        "Description": "Uruchamia Kreatora zmiany kluczy szyfrowania",
+        "ID": 54
+    },
+    {
+        "Command": "shrpubw",
+        "Description": "Otwiera Kreatora udostępniania folderów",
+        "ID": 55
+    },
+    {
+        "Command": "sigverif",
+        "Description": "Uruchamia Narzędzie weryfikacji podpisów plików",
+        "ID": 56
+    },
+    {
+        "Command": "mblctr",
+        "Description": "Uruchamia Centrum mobilności systemu Windows",
+        "ID": 57
+    },
+    {
+        "Command": "iscsicpl",
+        "Description": "Otwiera właściwości inicjatora iSCSI",
+        "ID": 58
+    },
+    {
+        "Command": "systeminfo",
+        "Description": "Wyświetla szczegółowe informacje o systemie w Wierszu polecenia",
+        "ID": 59
+    },
+    {
+        "Command": "sdclt",
+        "Description": "Otwiera narzędzie do tworzenia kopii zapasowych i przywracania danych",
+        "ID": 60
+    },
+    {
+        "Command": "bthprops.cpl",
+        "Description": "Otwiera ustawienia Bluetooth",
+        "ID": 61
+    },
+    {
+        "Command": "taskmgr",
+        "Description": "Otwiera Menedżer zadań",
+        "ID": 62
+    },
+    {
+        "Command": "control",
+        "Description": "Otwiera Panel sterowania",
+        "ID": 63
+    },
+    {
+        "Command": "dxdiag",
+        "Description": "Otwiera Narzędzie diagnostyczne DirectX",
+        "ID": 64
+    },
+    {
+        "Command": "explorer",
+        "Description": "Otwiera Eksplorator plików",
+        "ID": 65
+    },
+    {
+        "Command": "regedit",
+        "Description": "Otwiera Edytor rejestru",
+        "ID": 66
+    },
+    {
+        "Command": "eventvwr",
+        "Description": "Otwiera Podgląd zdarzeń",
+        "ID": 67
+    },
+    {
+        "Command": "cleanmgr",
+        "Description": "Uruchamia Oczyszczanie dysku",
+        "ID": 68
+    }
+]

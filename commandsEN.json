@@ -1,0 +1,342 @@
+[
+    {
+        "Command": "appwiz.cpl",
+        "Description": "Opens 'Programs and Features'",
+        "ID": 1
+    },
+    {
+        "Command": "msconfig",
+        "Description": "Opens the 'System Configuration' tool",
+        "ID": 2
+    },
+    {
+        "Command": "cmd",
+        "Description": "Launches Command Prompt",
+        "ID": 3
+    },
+    {
+        "Command": "notepad",
+        "Description": "Launches Notepad",
+        "ID": 4
+    },
+    {
+        "Command": "calc",
+        "Description": "Launches Calculator",
+        "ID": 5
+    },
+    {
+        "Command": "explorer",
+        "Description": "Opens Windows Explorer",
+        "ID": 6
+    },
+    {
+        "Command": "dxdiag",
+        "Description": "Launches the DirectX Diagnostic Tool",
+        "ID": 7
+    },
+    {
+        "Command": "taskmgr",
+        "Description": "Launches Task Manager",
+        "ID": 8
+    },
+    {
+        "Command": "regedit",
+        "Description": "Launches the Registry Editor",
+        "ID": 9
+    },
+    {
+        "Command": "mmsys.cpl",
+        "Description": "Opens Sound Settings",
+        "ID": 10
+    },
+    {
+        "Command": "control",
+        "Description": "Opens Control Panel",
+        "ID": 11
+    },
+    {
+        "Command": "control admintools",
+        "Description": "Opens 'Administrative Tools'",
+        "ID": 12
+    },
+    {
+        "Command": "control folders",
+        "Description": "Opens 'Folder Options'",
+        "ID": 13
+    },
+    {
+        "Command": "control keyboard",
+        "Description": "Opens Keyboard Properties",
+        "ID": 14
+    },
+    {
+        "Command": "control mouse",
+        "Description": "Opens Mouse Properties",
+        "ID": 15
+    },
+    {
+        "Command": "control printers",
+        "Description": "Opens 'Devices and Printers'",
+        "ID": 16
+    },
+    {
+        "Command": "control schedtasks",
+        "Description": "Opens Task Scheduler",
+        "ID": 17
+    },
+    {
+        "Command": "control userpasswords",
+        "Description": "Opens User Accounts Settings",
+        "ID": 18
+    },
+    {
+        "Command": "control userpasswords2",
+        "Description": "Opens Advanced User Accounts Settings",
+        "ID": 19
+    },
+    {
+        "Command": "compmgmt.msc",
+        "Description": "Opens 'Computer Management'",
+        "ID": 20
+    },
+    {
+        "Command": "devmgmt.msc",
+        "Description": "Launches Device Manager",
+        "ID": 21
+    },
+    {
+        "Command": "diskmgmt.msc",
+        "Description": "Opens 'Disk Management'",
+        "ID": 22
+    },
+    {
+        "Command": "eventvwr.msc",
+        "Description": "Opens Windows Event Viewer",
+        "ID": 23
+    },
+    {
+        "Command": "fsmgmt.msc",
+        "Description": "Opens 'Shared Folders'",
+        "ID": 24
+    },
+    {
+        "Command": "gpedit.msc",
+        "Description": "Launches the Local Group Policy Editor",
+        "ID": 25
+    },
+    {
+        "Command": "inetcpl.cpl",
+        "Description": "Opens 'Internet Properties'",
+        "ID": 26
+    },
+    {
+        "Command": "lusrmgr.msc",
+        "Description": "Opens 'Local Users and Groups Manager'",
+        "ID": 27
+    },
+    {
+        "Command": "main.cpl",
+        "Description": "Opens Mouse Properties",
+        "ID": 28
+    },
+    {
+        "Command": "perfmon.msc",
+        "Description": "Opens Performance Monitor",
+        "ID": 29
+    },
+    {
+        "Command": "powercfg.cpl",
+        "Description": "Opens 'Power Options'",
+        "ID": 30
+    },
+    {
+        "Command": "rsop.msc",
+        "Description": "Opens 'Resultant Set of Policy'",
+        "ID": 31
+    },
+    {
+        "Command": "secpol.msc",
+        "Description": "Opens 'Local Security Policy'",
+        "ID": 32
+    },
+    {
+        "Command": "services.msc",
+        "Description": "Launches 'Services'",
+        "ID": 33
+    },
+    {
+        "Command": "sysdm.cpl",
+        "Description": "Opens 'System Properties'",
+        "ID": 34
+    },
+    {
+        "Command": "telephon.cpl",
+        "Description": "Opens 'Phone and Modem Options'",
+        "ID": 35
+    },
+    {
+        "Command": "timedate.cpl",
+        "Description": "Opens 'Date and Time'",
+        "ID": 36
+    },
+    {
+        "Command": "verifier",
+        "Description": "Launches the Driver Verifier Manager",
+        "ID": 37
+    },
+    {
+        "Command": "wf.msc",
+        "Description": "Opens 'Windows Firewall with Advanced Security'",
+        "ID": 38
+    },
+    {
+        "Command": "wmimgmt.msc",
+        "Description": "Opens 'WMI Management'",
+        "ID": 39
+    },
+    {
+        "Command": "wscui.cpl",
+        "Description": "Opens 'Windows Security Center'",
+        "ID": 40
+    },
+    {
+        "Command": "write",
+        "Description": "Launches WordPad",
+        "ID": 41
+    },
+    {
+        "Command": "wuapp",
+        "Description": "Opens 'Windows Update'",
+        "ID": 42
+    },
+    {
+        "Command": "optionalfeatures",
+        "Description": "Opens the 'Windows Features' window",
+        "ID": 43
+    },
+    {
+        "Command": "osk",
+        "Description": "Launches the On-Screen Keyboard",
+        "ID": 44
+    },
+    {
+        "Command": "snippingtool",
+        "Description": "Launches Snipping Tool",
+        "ID": 45
+    },
+    {
+        "Command": "sndvol",
+        "Description": "Launches Volume Mixer",
+        "ID": 46
+    },
+    {
+        "Command": "iexpress",
+        "Description": "Launches IExpress Package Wizard",
+        "ID": 47
+    },
+    {
+        "Command": "certmgr.msc",
+        "Description": "Opens the Certificate Manager for the current user",
+        "ID": 48
+    },
+    {
+        "Command": "control color",
+        "Description": "Opens 'Color and Appearance' settings",
+        "ID": 49
+    },
+    {
+        "Command": "control desktop",
+        "Description": "Opens Desktop Background Settings",
+        "ID": 50
+    },
+    {
+        "Command": "control fonts",
+        "Description": "Opens the Installed Fonts Folder",
+        "ID": 51
+    },
+    {
+        "Command": "colorcpl",
+        "Description": "Opens Color Management Settings",
+        "ID": 52
+    },
+    {
+        "Command": "control joy.cpl",
+        "Description": "Opens Game Controller Settings",
+        "ID": 53
+    },
+    {
+        "Command": "rekeywiz",
+        "Description": "Launches the Encryption Key Change Wizard",
+        "ID": 54
+    },
+    {
+        "Command": "shrpubw",
+        "Description": "Opens the Shared Folder Wizard",
+        "ID": 55
+    },
+    {
+        "Command": "sigverif",
+        "Description": "Launches the File Signature Verification Tool",
+        "ID": 56
+    },
+    {
+        "Command": "mblctr",
+        "Description": "Launches the Windows Mobility Center",
+        "ID": 57
+    },
+    {
+        "Command": "iscsicpl",
+        "Description": "Opens iSCSI Initiator Properties",
+        "ID": 58
+    },
+    {
+        "Command": "systeminfo",
+        "Description": "Displays detailed system information in Command Prompt",
+        "ID": 59
+    },
+    {
+        "Command": "sdclt",
+        "Description": "Opens the Backup and Restore tool",
+        "ID": 60
+    },
+    {
+        "Command": "bthprops.cpl",
+        "Description": "Opens Bluetooth Settings",
+        "ID": 61
+    },
+    {
+        "Command": "taskmgr",
+        "Description": "Otwiera Menedżer zadań",
+        "ID": 62
+    },
+    {
+        "Command": "control",
+        "Description": "Opens Control Panel",
+        "ID": 63
+    },
+    {
+        "Command": "dxdiag",
+        "Description": "Otwiera Narzędzie diagnostyczne DirectX",
+        "ID": 64
+    },
+    {
+        "Command": "explorer",
+        "Description": "Otwiera Eksplorator plików",
+        "ID": 65
+    },
+    {
+        "Command": "regedit",
+        "Description": "Otwiera Edytor rejestru",
+        "ID": 66
+    },
+    {
+        "Command": "eventvwr",
+        "Description": "Opens Event Viewer",
+        "ID": 67
+    },
+    {
+        "Command": "cleanmgr",
+        "Description": "Launches Disk Cleanup",
+        "ID": 68
+    }
+]
