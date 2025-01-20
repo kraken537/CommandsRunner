@@ -35,14 +35,10 @@ Command Runner to aplikacja napisana w Pythonie, która umożliwia uruchamianie 
 
 ## Funkcje
 
-- ✅ Uruchamianie poleceń systemowych z listy.
-- 
+- ✅ Uruchamianie poleceń systemowych z listy. 
 - 🔍 Wyszukiwanie poleceń w czasie rzeczywistym.
--
 - 🌐 Zmiana języka interfejsu między polskim a angielskim.
--
 - 🔒 Automatyczne uruchamianie aplikacji z uprawnieniami administratora.
-- 
 - 🧹 Usuwanie tymczasowych plików po zamknięciu aplikacji.
 
 ## Wymagania
